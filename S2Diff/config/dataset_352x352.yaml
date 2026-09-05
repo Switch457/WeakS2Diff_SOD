@@ -1,0 +1,83 @@
+train_dataset:
+  name: dataset.data_val.RGBD
+  params:
+    image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/segment-anything-main/train_data/img_all'
+    depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/segment-anything-main/train_data/depth_all'
+    gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/segment-anything-main/ablation/final_label/crf'
+    weak_gt: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/segment-anything-main/train_data/gt_all'
+    weak_mask: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/segment-anything-main/train_data/mask_all'
+    trainsize: 352
+
+test_dataset:
+  DUT:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/DUT-RGBD/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/DUT-RGBD/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/DUT-RGBD/GT'
+      testsize: 352
+  LFSD:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/LFSD/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/LFSD/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/LFSD/GT'
+      testsize: 352
+  NJU2K:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/NJU2K/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/NJU2K/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/NJU2K/GT'
+      testsize: 352
+  NLPR:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/NLPR/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/NLPR/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/NLPR/GT'
+      testsize: 352
+  RGBD135:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/RGBD_dataset/test/RGBD135/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/RGBD_dataset/test/RGBD135/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/RGBD_dataset/test/RGBD135/GT'
+      testsize: 352
+  SIP:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/SIP/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/SIP/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/SIP/GT'
+      testsize: 352
+  SSD:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/SSD/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/SSD/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/SSD/GT'
+      testsize: 352
+  STERE1000:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/STERE/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/STERE/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/STERE/GT'
+      testsize: 352
+  STERE:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/STERE/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/STERE/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/Dataset/STERE/GT'
+      testsize: 352
+  mixed:
+    name: dataset.data_val.test_dataset
+    params:
+      image_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/RGBD_dataset/test/mixed/RGB'
+      depth_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/RGBD_dataset/test/mixed/depth'
+      gt_root: '/media/swq/8ea992ba-afb3-44ce-8a80-69ff10668360/swq/saliency_map/RGBD_dataset/test/mixed/GT'
+      testsize: 352
+
+  
