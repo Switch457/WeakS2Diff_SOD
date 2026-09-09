@@ -79,7 +79,7 @@ python denseCRF.py \
     --output_path /path/to/crf_output
 ```
 
-We also provide our refined pseudo annotations in pseudo_gt folder.
+We also provide our refined pseudo annotations in folder: RGBD_dataset/training_dataset/pseudo_gt.
 
 ## Acknowledgement
    
